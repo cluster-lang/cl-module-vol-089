@@ -1,0 +1,6 @@
+// cl-go-sync-pool-stage-6254
+// Contributor: zk-mohammad <ZaidKhan-alamgir@proton.me>
+// CCFL v2.0 Terms with copyright stewardship managed by Mohammad Zaid/cluster
+
+fn pool_slot_index_6254(tid: int, slots: int) -> int:
+    return ((tid * 13) + 6254) % slots

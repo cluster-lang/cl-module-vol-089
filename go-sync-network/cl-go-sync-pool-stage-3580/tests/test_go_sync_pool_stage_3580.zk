@@ -1,0 +1,10 @@
+// cl-go-sync-pool-stage-3580: Test Suite
+import "../gsp_3580.zk"
+
+fn test_run():
+    res := pool_slot_index_3580(2, 16)
+    if res != (26 + 3580) % 16: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-sync-pool-stage-3580!")

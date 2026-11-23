@@ -1,0 +1,10 @@
+// cl-go-sync-pool-stage-7954: Test Suite
+import "../gsp_7954.zk"
+
+fn test_run():
+    res := pool_slot_index_7954(2, 16)
+    if res != (26 + 7954) % 16: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-sync-pool-stage-7954!")
